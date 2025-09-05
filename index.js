@@ -29,6 +29,9 @@ app.get('/api/v1/users', (req, res) => {
   });
 });
 
-app.listen(3000,function(){
+//サーバーの実行環境の詳細なデータを取得できる
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT,function(){
   console.log("I am runging!");
 })
